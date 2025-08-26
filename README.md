@@ -14,14 +14,18 @@ A code block is worth 1000 words:
 ```go
 package main
 
-import "github.com/coxley/bitflags"
+import (
+	"fmt"
+
+	"github.com/coxley/bitflags"
+)
 
 type perms uint8
 
 const (
-    read perms = 1 << iota
-    write
-    exec
+	read perms = 1 << iota
+	write
+	exec
 )
 
 func main() {
@@ -33,7 +37,7 @@ func main() {
 	// Output:
 	//   read: set
 	//   exec: set
-	for _, flag := range flags.All() {
+	for flag := range flags.All() {
 		switch flag {
 		case read:
 			fmt.Println("read: set")
