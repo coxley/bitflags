@@ -1,5 +1,7 @@
 # bitflags
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/coxley/bitflags.svg)](https://pkg.go.dev/github.com/coxley/bitflags)
+
 This covers a specific use-case for bit flags where:
 
 - You want the flags themselves defined separately.
